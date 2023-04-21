@@ -31,10 +31,10 @@ intelligence information into its security program. One way of doing so is
 to gather IP intelligence to prevent connections to known-malicious IPs.
 Your security budget is $9.37, all that was left in the petty-cash drawer
 after the March birthdays celebration. You need to come up with a script
-to pull IP intelligence and incorporate it into your processes. 
+to pull IP intelligence and incorporate it into your processes.
 
 DIRECTIONS
-- Look through the APIs in the README section and pick one or two that can 
+- Look through the APIs in the README section and pick one or two that can
   help you make the right decision.
 - Read the API documentation to determine how the data is structured, what
   routes you should query and what parameters need to be passed.
@@ -45,7 +45,7 @@ DIRECTIONS
   a few different ways:
     1. An interactive prompt that asks you what action you would like to
        perform after displaying relevant data from the APIs you query
-    2. Logic that analyzes the returned information and determines an 
+    2. Logic that analyzes the returned information and determines an
        action automatically.
     3. A combination of the previous options.
 - Identify the issues with the approaches above.
@@ -61,8 +61,8 @@ their documentation to determine what goes into a particular score.
 Note that only a small subset of what is returned is printed. Feel free
 to explore the complete data set returned to aid your decision.
 """)
-        
-    
+
+
 def main(args):
 
     colorama.init()
@@ -96,15 +96,19 @@ VIRUS TOTAL REPUTATION DATA
 
 
     # Add your code here
+def drop():
+    # drop
+def alert():
+    #alert
+def pass():
+    
 
 
 
-        
-            
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-a", "--Address", help ="IP address to scan")
-    
+
     args = parser.parse_args()
     main(args)
