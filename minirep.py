@@ -97,11 +97,22 @@ VIRUS TOTAL REPUTATION DATA
 
     # Add your code here
 def drop():
+    if (vt_rep['malicious']):
+        # drop ip
     # drop
 def alert():
+    if (vt_rep['total_votes'] >= 5):
+        userInput = input("IP address may be malicious, would you like to pass or drop it? 1 for pass, 2 to drop \n")
+
+        if (userInput = "1"):
+            passIP()
+        if (userInput = "2"):
+            drop()
+            
     #alert
-def pass():
-    
+def passIP():
+    pass
+
 
 
 
